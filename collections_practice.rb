@@ -1,3 +1,5 @@
+require 'pry'
+
 def sort_array_asc(array)
   array.sort()
 end
@@ -57,4 +59,11 @@ end
 
 def sum_array(array)
   sum = array.inject { |sum, n| sum + n } 
+end
+
+def add_s(array)
+  newArray = array.each_with_index.collect { |element, index|
+  
+    
+  }
 end
