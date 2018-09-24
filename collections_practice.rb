@@ -54,3 +54,7 @@ end
 def find_a(array)
   newArray = array.find_all {|string| string[0] == "a"}
 end
+
+def sum_array
+  
+end
