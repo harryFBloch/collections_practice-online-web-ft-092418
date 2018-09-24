@@ -28,9 +28,9 @@ def swap_elements_from_to(array, index, destination_index)
     newArray = []
   array.each_with_index {|element, index2|
     if index2 == index
-      newArray[index2] = array[destination_index]
-    elsif index == destination_index
-      newArray[index] = array[index]
+      newArray[index] = array[destination_index]
+    elsif index2 == destination_index
+      newArray[index2] = array[index2]
     else
       newArray[index2] = array[index2] 
     end
