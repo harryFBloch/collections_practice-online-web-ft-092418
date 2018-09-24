@@ -55,6 +55,6 @@ def find_a(array)
   newArray = array.find_all {|string| string[0] == "a"}
 end
 
-def sum_array
-  
+def sum_array(array)
+  sum = array.inject { |sum, n| sum + n } 
 end
