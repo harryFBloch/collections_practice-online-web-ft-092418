@@ -1,1 +1,40 @@
+def sort_array_asc(array)
+  array.sort()
+end
+
+def sort_array_desc(array)
+  newArray = array.sort_by { |h| h * -1 }
+end
+
+def sort_array_char_count(array)
+  newArray = array.sort_by { |string| string.length}
+end
+
+def swap_elements(array)
+  newArray = []
+  array.each_with_index {|element, index|
+    if index == 1
+      newArray[index] = array[2]
+    elsif index == 2
+      newArray[index] = array[1]
+    else
+      newArray[index] = array[index] 
+    end
+  }
+  newArray
+end
+
+def swap_elements_from_to(array, index, destination_index)
+    newArray = []
+  array.each_with_index {|element, index2|
+    if index2 == index
+      newArray[index2] = array[destination_index]
+    elsif index == destination_index
+      newArray[index] = array[index]
+    else
+      newArray[index2] = array[index2] 
+    end
+  }
+  newArray
+end
 
