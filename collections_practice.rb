@@ -52,6 +52,5 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  newArray = []
-  array
+  newArray = array.find_all {|string| }
 end
