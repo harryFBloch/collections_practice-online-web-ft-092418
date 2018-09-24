@@ -63,6 +63,7 @@ end
 
 def add_s(array)
   newArray = array.each_with_index.collect { |element, index|
+  puts element
   }
 end
 
