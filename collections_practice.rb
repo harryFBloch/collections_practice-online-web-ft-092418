@@ -63,9 +63,10 @@ end
 
 def add_s(array)
   newArray = array.each_with_index.collect { |element, index|
-  puts element
+    if index != 1
+      element += "S"
+    end
   }
 end
 
 add_s([1,2,3])
-binding.pry
